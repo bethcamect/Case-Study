@@ -2,21 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Case Study Image</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study</title>
     <style>
         body {
-            background-color: #FFFFFF; /* Sets the background color to white */
-            margin: 0; /* Removes default margin */
-            padding: 0; /* Removes default padding */
+            background-color: #FFFFFF;
+            margin: 0;
+            padding: 20px; /* Add padding around the content */
+            max-width: 600px; /* Ensures content does not exceed 600px */
+            margin: 0 auto; /* Centers the content */
+            position: relative; /* Allows absolute positioning of links */
         }
         img {
             width: 100%; /* Makes the image responsive */
+            max-width: 600px; /* Keeps the image at a maximum of 600px */
+            height: auto; /* Maintains the aspect ratio */
             display: block; /* Removes space below the image */
+            margin: 20px 0; /* Adds vertical whitespace around the image */
+        }
+        .link {
+            position: absolute; /* Allows positioning on top of the image */
+            display: block; /* Makes the entire area clickable */
+            background: rgba(255, 255, 255, 0); /* Transparent background */
+        }
+        .website-link {
+            top: 95%; /* Adjust this value based on your image */
+            left: 5%; /* Adjust this value based on your image */
+            width: 200px; /* Adjust width as needed */
+            height: 30px; /* Adjust height as needed */
+        }
+        .demo-link {
+            top: 95%; /* Adjust this value based on your image */
+            left: 50%; /* Adjust this value based on your image */
+            transform: translateX(-50%); /* Center the demo link */
+            width: 200px; /* Adjust width as needed */
+            height: 30px; /* Adjust height as needed */
         }
     </style>
 </head>
 <body>
-    <img src="https://i.imgur.com/nLBRNi4.png" alt="Case Study Image"> <!-- Image from Imgur -->
+    <img src="https://i.imgur.com/x7arpqj.jpeg" alt="Case Study Image">
+
+    <!-- Invisible links over the image -->
+    <a href="https://camect.com/emea_sales/" target="_blank" class="link website-link"></a> <!-- Website URL -->
+    <a href="https://meetings.hubspot.com/davesmall/camect?uuid=6bdea610-e203-46b1-aaef-23b9ca7bec62" target="_blank" class="link demo-link"></a> <!-- Demo booking link -->
 </body>
 </html>
-Rename HTML file to case-study.html
+
